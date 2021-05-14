@@ -5,13 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css_file.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     <title>SHUBHRAJYOTI</title>
 </head>
 <body>
-    <div class="div1">
-    <div class="div2">WELCOME TO MY PAGE!!</div>    
-    <div class="div3"></div>   
-    <div class="div4">
+    <div class="div1"> 
+    <div class="top">
+    <input type="checkbox"
+    class="checkbox" id="checkbox"/>
+    <label for="checkbox"
+    class="label">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <div class="ball"></div>
+    </label>
+    </div>
+    <div class="div2">WELCOME TO MY PAGE!!</div>   
+    <div class="div3">
     <h2>ABOUT ME</h2>
     <p><img src="My pic.jpeg" alt="image not available" width="120" height="120"></p>
     <p>Hey!<br>Myself Shubhrajyoti , currently pursuing my first year of Bachelor of Technology in Information Technology from Veer Surendra Sai University of Technology,&nbsp Burla. I am from Balasore, Odisha.<br>  
@@ -26,7 +37,7 @@
     <li>Coding</li>
     </ul>
     </div>
-    <div class="div5">For further info contact me on:<br>
+    <div class="div4">For further info contact me on:<br>
     <a href="https://www.linkedin.com/in/shubhrajyoti-690bba202">LinkedIn</a>
     &nbsp&nbsp
     <a href="https://twitter.com/Hriti24?s=08">Twitter</a>
@@ -34,5 +45,14 @@
     <a href="https://github.com/Shubhrajyoti24">GitHub</a>
     </div>
     </div>
+
+<script>
+var checkbox = document.getElementById("checkbox");
+checkbox.onclick = function()
+{
+    document.body.classList.toggle("dark");
+}
+</script>
+
 </body>
 </html>
